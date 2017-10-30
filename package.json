@@ -1,0 +1,38 @@
+{
+  "name": "od-tsplay",
+  "version": "0.1.0",
+  "description": "Simple TypeScript Project Template",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "npm run serve",
+    "serve": "node tools/browserSync",
+    "tsc:src": "tsc -w -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinony/od-tsplay.git"
+  },
+  "keywords": [
+    "Template",
+    "Project Template",
+    "Starter",
+    "Starter Template",
+    "TypeScript",
+    "TypeScript Template",
+    "Basic Template",
+    "Simple Template",
+    "Prototyping"
+  ],
+  "author": "Onur Dogangönül <contact@dinony.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dinony/od-tsplay/issues"
+  },
+  "homepage": "https://github.com/dinony/od-tsplay#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "systemjs": "^0.20.19",
+    "systemjs-plugin-css": "^0.1.36",
+    "typescript": "^2.5.3"
+  }
+}

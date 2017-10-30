@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./tsc-out",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "target": "es3",
+    "module": "commonjs",
+    "lib": [
+      "es2016",
+      "dom"
+    ]
+  },
+  "files": ["src/index.ts"]
+}
