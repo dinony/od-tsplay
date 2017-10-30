@@ -80,6 +80,19 @@ Observable.timer(0, 512).map(i => Math.pow(2, i))
 Browsersync is used to synchronize the browser when changes are made.
 Refer to the [browsersync options](https://www.browsersync.io/docs/options) if you want to change the current [configuration](https://github.com/dinony/od-tsplay/blob/master/tools/browserSync.js).
 
+## NPM Scripts
+
+```bash
+$ npm run <script>
+```
+
+| Name          | Description
+|---------------|-------------------------------------------
+| dev           | Concurrently run Browsersync and tsc compiler in watch mode
+| serve         | Just start Browsersync
+| tsc:src       | Just start tsc compiler
+
+
 ## Anti-Goals
 
 - Opaque layers of build steps / optimizations
