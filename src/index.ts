@@ -1,7 +1,5 @@
 import '../src/index.css'
 
-const elem = document.querySelector('.test')
+const elem = document.querySelector('.test') as Element
 
-if(elem !== null) {
-  elem.innerHTML = ':)'
-}
+elem.innerHTML = ':)'
