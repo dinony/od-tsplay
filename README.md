@@ -53,7 +53,7 @@ according to the [config API](https://github.com/systemjs/systemjs/blob/master/d
 1. Install dependency
 
 ```bash
-npm i -S rxjs
+$ npm i -S rxjs
 ```
 2. Adapt systemjs.config.js
 
