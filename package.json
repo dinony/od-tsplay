@@ -4,7 +4,7 @@
   "description": "Simple TypeScript Project Template",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "npm run serve",
+    "dev": "concurrently \"npm run serve\" \"npm run tsc:src\"",
     "serve": "node tools/browserSync",
     "tsc:src": "tsc -w -p tsconfig.json"
   },
@@ -31,8 +31,8 @@
   "homepage": "https://github.com/dinony/od-tsplay#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
+    "concurrently": "^3.5.0",
     "systemjs": "^0.20.19",
-    "systemjs-plugin-css": "^0.1.36",
     "typescript": "^2.5.3"
   }
 }

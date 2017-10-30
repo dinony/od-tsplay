@@ -1,13 +1,4 @@
 SystemJS.config({
-  paths: {
-    'npm:' : 'node_modules/'
-  },
-  map: {
-    'css': 'node_modules/systemjs-plugin-css/css.js'
-  },
-  meta: {
-    '*.css': {'loader': 'css'}
-  },
-  transpiler: 'ts',
+  paths: {'npm:' : 'node_modules/'},
   warnings: true
 })
