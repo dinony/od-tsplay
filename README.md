@@ -48,7 +48,26 @@ Do not forget to adapt `package.json` if you plan to publish your results.
 Additional libraries need to be added to [systemjs.config.js](https://github.com/dinony/od-tsplay/blob/master/systemjs.config.js)
 according to the [config API](https://github.com/systemjs/systemjs/blob/master/docs/config-api.md).
 
-### Example 1: Add RxJS
+## Browsersync
+
+Browsersync is used to synchronize the browser when changes are made.
+Refer to the [browsersync options](https://www.browsersync.io/docs/options) if you want to change the current [configuration](https://github.com/dinony/od-tsplay/blob/master/tools/browserSync.js).
+
+## NPM Scripts
+
+```bash
+$ npm run <script>
+```
+
+| Name          | Description
+|---------------|-------------------------------------------
+| dev           | Concurrently run Browsersync and tsc compiler in watch mode
+| serve         | Just start Browsersync
+| tsc:src       | Just start tsc compiler
+
+## Examples
+
+### Add RxJS
 
 1. Install dependency
 
@@ -76,7 +95,7 @@ Observable.timer(0, 512).map(i => Math.pow(2, i))
   .subscribe(i => {console.log(i)})
 ```
 
-### Example 2: Add Angular
+### Add Angular
 
 1. Install dependencies
 
@@ -160,28 +179,9 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
 ```
 
-## Browsersync
-
-Browsersync is used to synchronize the browser when changes are made.
-Refer to the [browsersync options](https://www.browsersync.io/docs/options) if you want to change the current [configuration](https://github.com/dinony/od-tsplay/blob/master/tools/browserSync.js).
-
-## NPM Scripts
-
-```bash
-$ npm run <script>
-```
-
-| Name          | Description
-|---------------|-------------------------------------------
-| dev           | Concurrently run Browsersync and tsc compiler in watch mode
-| serve         | Just start Browsersync
-| tsc:src       | Just start tsc compiler
-
-
 ## Anti-Goals
 
 - Opaque layers of build steps / optimizations
 - Unnecessary tooling barrieres
 - Unnecessary CLI abstractions/indirections
 - etc.
-
