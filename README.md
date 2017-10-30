@@ -15,6 +15,7 @@ The features are the minimum of requirements I find necessary to get started.
 - Strict compiler default settings
 - Intermediate compilation output in `./tsc-out`
 - Module loading via [SystemJS](https://github.com/systemjs/systemjs)
+- Direct access to underlying tools
 
 ## Usage
 
