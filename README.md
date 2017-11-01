@@ -54,7 +54,7 @@ To avoid duplicate work of configuring SystemJS for common scenarios, some confi
 
 | Name             | Description
 |------------------|-------------------------------------------
-| master           | TypeScript with module loading
+| master           | Base config: TypeScript with module loading
 | config/rxjs      | Base config + RxJS
 | config/angular   | Base config + Angular
 | ...              | TODO: Add other common configurations
