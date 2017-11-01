@@ -1,3 +1,6 @@
-const elem = document.querySelector('.test') as Element
+import {Observable} from 'rxjs/Observable'
+import 'rxjs/add/observable/timer'
+import 'rxjs/add/operator/map'
 
-elem.innerHTML = ':)'
+Observable.timer(0, 512).map(i => Math.pow(2, i))
+  .subscribe(i => {console.log(i)})
