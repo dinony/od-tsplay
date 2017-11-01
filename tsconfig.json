@@ -12,6 +12,7 @@
     "pretty": true,
     "target": "es3",
     "module": "commonjs",
+    "skipLibCheck": true,
     "lib": [
       "es2016",
       "dom"
