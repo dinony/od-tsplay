@@ -16,6 +16,7 @@ The features are the minimum of requirements I find necessary to get started.
 - Intermediate compilation output in `./tsc-out`
 - Module loading via [SystemJS](https://github.com/systemjs/systemjs)
 - Direct access to underlying tools
+- Existing configuration branches for common scenarios
 
 ## Usage
 
@@ -46,7 +47,36 @@ Do not forget to adapt `package.json` if you plan to publish your results.
 
 `index.html` [imports](https://github.com/systemjs/systemjs/blob/master/docs/system-api.md#systemjsimportmodulename--normalizedparentname---promisemodule) the compilation output (`./tsc-out/index.js`).
 Additional libraries need to be added to [systemjs.config.js](https://github.com/dinony/od-tsplay/blob/master/systemjs.config.js)
-according to the [config API](https://github.com/systemjs/systemjs/blob/master/docs/config-api.md).
+according to the [config API](https://github.com/systemjs/systemjs/blob/master/docs/config-api.md). If you are not familiar with SystemJS and want to get a feeling what needs to be done, check out the [examples section](#examples) for some details.
+
+## Common Configurations
+
+To avoid duplicate work of configuring SystemJS for common scenarios, some configurations are provided in `config/*` branches.
+
+| Name             | Description
+|------------------|-------------------------------------------
+| master           | Base config: TypeScript with module loading
+| config/rxjs      | Base config + RxJS
+| config/angular   | Base config + Angular
+| ...              | TODO: Add other common configurations
+
+Feel free to add a PR if a common scenario is not covered for you yet.
+
+### Usage
+
+When cloning initially you can choose to point the newly created HEAD to the e.g. config/rxjs branch.
+
+```bash
+git clone git@github.com:dinony/od-tsplay.git -b config/rxjs <your-project>
+```
+
+If you already cloned the repository and decided later to switch to another configuration then simply checkout the other branch.
+
+```bash
+$ git branch -a
+$ git checkout config/angular
+$ npm i
+```
 
 ## Browsersync
 
