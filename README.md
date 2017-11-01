@@ -46,7 +46,7 @@ Do not forget to adapt `package.json` if you plan to publish your results.
 
 `index.html` [imports](https://github.com/systemjs/systemjs/blob/master/docs/system-api.md#systemjsimportmodulename--normalizedparentname---promisemodule) the compilation output (`./tsc-out/index.js`).
 Additional libraries need to be added to [systemjs.config.js](https://github.com/dinony/od-tsplay/blob/master/systemjs.config.js)
-according to the [config API](https://github.com/systemjs/systemjs/blob/master/docs/config-api.md).
+according to the [config API](https://github.com/systemjs/systemjs/blob/master/docs/config-api.md). If you are not familiar with SystemJS and want to get a feeling what needs to be done, check out the [examples section](#examples) for some details.
 
 ## Common Configurations
 
