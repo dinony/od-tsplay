@@ -1,6 +1,6 @@
 {
   "name": "od-tsplay",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple TypeScript Project Template",
   "main": "src/index.ts",
   "scripts": {
