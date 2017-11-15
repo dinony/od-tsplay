@@ -7,7 +7,7 @@ browserSync({
   reloadDelay: 200,
   reloadDebounce: 500,
   files: [
-    'tsc-out/*.js',
+    'tsc-out/**/*.js',
     'src/**/*.css',
     'src/**/*.html',
     'index.html',
